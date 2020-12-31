@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.congratulationseverything">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <activity
+            android:name="W_FrameActivity"
+            android:label="표지 선택">
+        </activity>
+        <activity
+            android:name="B_FrameActivity"
+            android:label="표지 선택">
+        </activity>
+        <activity
+            android:name="Start">
+        </activity>
+        <activity
+            android:name=".Letter">
+        </activity>
+        <activity
+            android:name=".Photo">
+        </activity>
+
+        <activity
+            android:name=".Letter_FrameActivity"
+            android:label="편지지 선택">
+        </activity>
+        <activity
+            android:name=".record">
+        </activity>
+        <activity
+            android:name=".Result">
+        </activity>
+
+        <activity
+            android:name=".CalenderActivity"
+            android:label="일정">
+        </activity>
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+
+
+</manifest>
